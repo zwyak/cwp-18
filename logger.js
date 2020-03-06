@@ -10,6 +10,8 @@ class Logger {
 
   format(message, level){
     const date = moment().format(this.dateFormat);
-    return `${date} | ${this.prefix} | ${!level ? this.defaultLevel : level} | ${message}`
+    return `${date} | ${this.prefix} | ${!level ? this.defaultLevel : level} | ${message}`;
   }
 }
+
+module.exports.Logger = Logger;
