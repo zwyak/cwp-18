@@ -44,3 +44,5 @@ class FileLogger extends logger.Logger{
     });
   }
 }
+
+module.exports.FileLogger = FileLogger;
