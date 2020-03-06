@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 class DefferedFileLogger extends flogger.FileLogger{
-  constructor(file, queueLength prefix, defaultLevel, dateFormat){
+  constructor(file, queueLength, prefix, defaultLevel, dateFormat){
     super(file, prefix, defaultLevel, dateFormat);
     this.file = file;
     this.queueLength = queueLength;
