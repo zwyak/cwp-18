@@ -34,3 +34,5 @@ class ConsoleLogger extends logger.Logger{
     }
   }
 }
+
+module.exports.ConsoleLogger = ConsoleLogger;
